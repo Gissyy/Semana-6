@@ -20,7 +20,7 @@ return;
 }
 // Operar en céntimos evita arrastrar decimales monetarios.
 const subtotal = cantidad * 850;
-const descuento = cantidad >= 12 ? Math.round(subtotal * 0.05) : 0;
+const descuento = cantidad >= 15 ? Math.round(subtotal * 0.08) : 0;
 const reparto = modalidad === "reparto" ? 400 : 0;
 const total = subtotal - descuento + reparto;
 salida.textContent = [
